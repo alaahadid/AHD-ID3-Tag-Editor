@@ -1,0 +1,14 @@
+Edit codes:
+==========
+<Varies>:
+  On load: the values are not the same. For example, load some mp3s with different artists.
+  On save: don't change this value. For example, load some mp3s with different artists will save the same value
+           of the original file.
+
+<FileName>: Sets the file name without extension of the file.
+<Sequence>: Sets the number of sequence for the file.
+<N/T>: Sequence / Total: set the the number of sequence for the file / total files count.
+<SequenceStartWith>(x): while x is the index number. Sets the number of sequence for the file as presented in saving sequence pluse the
+					 number provided in the x parameter.
+<SN/T>(x): SequenceStartWith/Total: while x is the index number. Sets the number of sequence for the file as presented in saving 
+           sequence pluse the number provided in the x parameter/ Total files count of the save sequence.

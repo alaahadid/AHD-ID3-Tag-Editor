@@ -1,0 +1,81 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AHD.ID3.Editor.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Win_Location" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">27, 13</Value>
+    </Setting>
+    <Setting Name="Win_Size" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">1081, 644</Value>
+    </Setting>
+    <Setting Name="SplitContainer1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">207</Value>
+    </Setting>
+    <Setting Name="SplitContainer2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">521</Value>
+    </Setting>
+    <Setting Name="SplitContainer3" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">331</Value>
+    </Setting>
+    <Setting Name="SplitContainer4" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">330</Value>
+    </Setting>
+    <Setting Name="SplitContainer5" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">317</Value>
+    </Setting>
+    <Setting Name="DefaultLayout" Type="AHD.ID3.Editor.LayoutPresent" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FirstRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ColumnsManager" Type="AHD.ID3.Editor.Base.ColumnsManager" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GenreMemory" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ArtistsMemory" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AlbumsMemory" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DoubleClickActionIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="DefaultID3V2Version" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="ID3V2_UseUnsynchronisation" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ID3V2_KeepPadding" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ID3V2_DropExtendedHeader" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ID3V2_WriteFooter" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MediaPlayerAutoStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TabPageColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="TabPageHighlightColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">LightGoldenrodYellow</Value>
+    </Setting>
+    <Setting Name="TabPageSelectColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="TabPageSplitcolor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">LightGray</Value>
+    </Setting>
+    <Setting Name="TabPageTextColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

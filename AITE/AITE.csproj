@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBEB550A-998C-44E1-A22C-6EB206FD38FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AHD.ID3.Editor</RootNamespace>
+    <AssemblyName>AITE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AHD.ID3.Editor.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\AITE.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|AnyCPU'">
+    <OutputPath>bin\x86\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\Releases\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\Release\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\Release\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Frm_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Settings.Designer.cs">
+      <DependentUpon>Frm_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\st_ID3V2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\st_ID3V2.Designer.cs">
+      <DependentUpon>st_ID3V2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\st_General.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\st_General.Designer.cs">
+      <DependentUpon>st_General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_About.Designer.cs">
+      <DependentUpon>Frm_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\st_TabPagesCustomize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\st_TabPagesCustomize.Designer.cs">
+      <DependentUpon>st_TabPagesCustomize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Types\SettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Types\LayoutPresent.cs" />
+    <Compile Include="Types\Enums.cs" />
+    <Compile Include="Types\ControlPage.cs" />
+    <Compile Include="Forms\Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_StartUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_StartUp.Designer.cs">
+      <DependentUpon>Frm_StartUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\ToolBar.cs" />
+    <EmbeddedResource Include="Controls\st_General.resx">
+      <DependentUpon>st_General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\st_ID3V2.resx">
+      <DependentUpon>st_ID3V2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_About.resx">
+      <DependentUpon>Frm_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_StartUp.resx">
+      <DependentUpon>Frm_StartUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Settings.resx">
+      <DependentUpon>Frm_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Controls\st_TabPagesCustomize.resx">
+      <DependentUpon>st_TabPagesCustomize.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\Base.csproj">
+      <Project>{1827041e-f551-42c3-b9a1-5e3241fa759a}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUI\GUI.csproj">
+      <Project>{bca6064d-67be-41cd-8adc-d3cd1666c5b1}</Project>
+      <Name>GUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ID3Tag\ID3Tag.csproj">
+      <Project>{cf94e1ec-89cf-4363-a4ad-370b71a1058e}</Project>
+      <Name>ID3Tag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLV\MLV.csproj">
+      <Project>{cb876583-d5f9-4398-b399-fbe6d4aa8a51}</Project>
+      <Name>MLV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MTC\MTC.csproj">
+      <Project>{f496c3fc-acd2-4b39-8747-fdb8b67739bc}</Project>
+      <Name>MTC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AITE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id3v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AITE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="commandlines.txt" />
+    <None Include="Resources\gplv3-127x51.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

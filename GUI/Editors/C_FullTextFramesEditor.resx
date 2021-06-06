@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKqSURBVDhPjZJZTxNRHMX7hXygy+ASv4WPxrAVugABRGTT
+        aOKDGkCi0cgixUJYRZHdDqCpIBQqFgyGrXRBKAW6Ap3S7fi/t8qjYZKTm5m553fOXWSCTixV6cRGpV60
+        kvyCfigm6NtTgl4E/eO6UjiJa8VTuFokIrNgPHC9WFxU6MZuyNgjaMWWZWcEy04J0XgKEilylkTwNIGD
+        YAy+cJy/S7EkDkNxzCzZU0abI37riflI0I7kygS9aW3ZEcGDPi8iMTLTxLy6efiP4zggQziS4OAQje6j
+        M2x6ojDZ/JiyHUEoEaMEmAzaCHC/Z59PYmIAbygG/0mcJ7MG+9TGvh/F5p6E6g4Xvq4GoNK2pggwFLPa
+        Twng4ZOY8ust8NJ4HE0iSq0CJwk4vCxdwvquhEqjE71mD1SaMRCgPWXZOsG9bg9cVJFpx3dG6Qmefiwl
+        seuLnZvXdiO4276NzunfUBaMMICIuXUCdO3x6mpKL2iwoPD5IopI2sYFqOk7+/dP5a0bMJhcUOYPE4CO
+        aXYtjJrOHVobicaaTjdqOphcqDK6KNGBCsM2ytvsKGvdRPmbLTSP2qFUf0wDzKvhtJmUNpIIwsyVb528
+        8p02ApDxdssGaR0vBzegyPuQBkyvBMns/ivXeTo3U3KFwc7NZWQsbVpDSdMvNPSvQpE7wAAmiLYAqo1u
+        ft4XUdGrn3javQJ5Tj9kl2kTJ5YCvK5ER/b4S85/xe6E7sUPPOpYgjy7jwCFIsasfmqQBpi3Pv9XDKBp
+        /I6HbVYC9ECWqTekhhd8BHBeuIG6fgG1LRZkZNWlZHKNaXvg2yEGZg8utH62R7XN86h6PYeMm0afTKX9
+        9EylnRhVZk/4VZpxup6j/IYp84egUA/SUb2HPPcdbVgfVe6l1B6efCmrK5SR3TXzB1zzEHQtWPhxAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="toolStripButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB5SURBVDhP3ZHRDYAwCETZqTu5U3diFldADnKx6Ye08cfo
+        /bSRe4VD5J9f02bUYamu3eQUKye+rXkKs4sgwEvIXKCWImgbAAPMrwDLr0arHhi0bGIhg+LM2wAkzNTH
+        4AhCZ/j/CB73z3Ps34V72dW4Z45UvlpSP11wAaVsiyA6j4voAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
+  <data name="textEditorControl_OriginalAlbum.ToolTip" xml:space="preserve">
+    <value>   The 'Original album/Movie/Show title' frame is intended for the title
+   of the original recording(/source of sound), if for example the music
+   in the file should be a cover of a previously released song.</value>
+  </data>
+  <data name="textEditorControl_partOfSet.ToolTip" xml:space="preserve">
+    <value>   The 'Part of a set' frame is a numeric string that describes which
+   part of a set the audio came from. This frame is used if the source
+   described in the "TAL" frame is divided into several mediums, e.g. a
+   double CD. The value may be extended with a "/" character and a
+   numeric string containing the total number of parts in the set. E.g.
+   "1/2".</value>
+  </data>
+  <data name="textEditorControl_track.ToolTip" xml:space="preserve">
+    <value>The 'Track number/Position in set' frame is a numeric string
+containing the order number of the audio-file on its original
+recording. This may be extended with a "/" character and a numeric
+string containing the total numer of tracks/elements on the original
+recording. E.g. "4/9".</value>
+  </data>
+  <data name="textEditorControl_ContentGroupDescription.ToolTip" xml:space="preserve">
+    <value>   The 'Content group description' frame is used if the sound belongs to
+   a larger category of sounds/music. For example, classical music is
+   often sorted in different musical sections (e.g. "Piano Concerto",
+   "Weather - Hurricane").</value>
+  </data>
+  <data name="textEditorControl_MusicianCreditsList.ToolTip" xml:space="preserve">
+    <value>   The 'Musician credits list' is intended as a mapping between
+   instruments and the musician that played it. Every odd field is an
+   instrument and every even is an artist or a comma delimited list of
+   artists.</value>
+  </data>
+  <data name="textEditorControl_OriginalLyricist.ToolTip" xml:space="preserve">
+    <value>   The 'Original Lyricist(s)/text writer(s)' frame is intended for the
+   text writer(s) of the original recording, if for example the music in
+   the file should be a cover of a previously released song. The text
+   writers are seperated with the "/" character.</value>
+  </data>
+  <data name="textEditorControl_OriginalArtists.ToolTip" xml:space="preserve">
+    <value>   The 'Original artist(s)/performer(s)' frame is intended for the
+   performer(s) of the original recording, if for example the music in
+   the file should be a cover of a previously released song. The
+   performers are seperated with the "/" character.</value>
+  </data>
+  <data name="textEditorControl_EncodedBy.ToolTip" xml:space="preserve">
+    <value>   The 'Encoded by' frame contains the name of the person or
+   organisation that encoded the audio file. This field may contain a
+   copyright message, if the audio file also is copyrighted by the
+   encoder.</value>
+  </data>
+  <data name="comboBoxControl_InitialKey.ToolTip" xml:space="preserve">
+    <value>   The 'Initial key' frame contains the musical key in which the sound
+   starts. It is represented as a string with a maximum length of three
+   characters. The ground keys are represented with "A","B","C","D","E",
+   "F" and "G" and halfkeys represented with "b" and "#". Minor is
+   represented as "m". Example "Cbm". Off key is represented with an "o"
+   only.</value>
+  </data>
+  <data name="comboBoxControl_MediaType.ToolTip" xml:space="preserve">
+    <value>   The 'Media type' frame describes from which media the sound
+   originated. This may be a textstring or a reference to the predefined
+   media types found in the list below. References are made within "("
+   and ")" and are optionally followed by a text refinement, e.g. "(MC)
+   with four channels". If a text refinement should begin with a "("
+   character it should be replaced with "((" in the same way as in the
+   "TCO" frame. Predefined refinements is appended after the media type,
+   e.g. "(CD/S)" or "(VID/PAL/VHS)".</value>
+  </data>
+  <data name="comboBoxControl_genre.ToolTip" xml:space="preserve">
+    <value>   The content type, which previously (in ID3v1.1) was
+   stored as a one byte numeric value only, is now a numeric string. You
+   may use one or several of the types as ID3v1.1 did or, since the
+   category list would be impossible to maintain with accurate and up to
+   date categories, define your own.
+   References to the ID3v1 genres can be made by, as first byte, enter
+   "(" followed by a number from the genres list and
+   ended with a ")" character. This is optionally followed by a
+   refinement, e.g. "(21)" or "(4)Eurodisco". Several references can be
+   made in the same frame, e.g. "(51)(39)". If the refinement should
+   begin with a "(" character it should be replaced with "((", e.g. "((I
+   can figure out any genre)" or "(55)((I think...)". The following new
+   content types is defined in ID3v2 and is implemented in the same way
+   as the numerig content types, e.g. "(RX)".</value>
+  </data>
+  <data name="comboBoxControl_language.ToolTip" xml:space="preserve">
+    <value>   The 'Language(s)' frame should contain the languages of the text or
+   lyrics in the audio file. The language is represented with three
+   characters according to ISO-639-2. If more than one language is used
+   in the text their language codes should follow according to their
+   usage.</value>
+  </data>
+  <data name="textEditorControl_BPM.ToolTip" xml:space="preserve">
+    <value>   BPM is short for beats per minute, and is easily computed by
+   dividing the number of beats in a musical piece with its length. To
+   get a more accurate result, do the BPM calculation on the main-part
+   only. To acquire best result measure the time between each beat and
+   calculate individual BPM for each beat and use the median value as
+   result. BPM is an integer and represented as a numerical string.</value>
+  </data>
+  <data name="textEditorControl_ProducedNotice.ToolTip" xml:space="preserve">
+    <value>   The 'Produced notice' frame, in which the string must begin with a
+   year and a space character (making five characters), is intended for
+   the production copyright holder of the original sound, not the audio
+   file itself. The absence of this frame means only that the production
+   copyright information is unavailable or has been removed, and must
+   not be interpreted to mean that the audio is public domain. Every
+   time this field is displayed the field must be preceded with
+   "Produced " (P) " ", where (P) is one character showing a P in a
+   circle.</value>
+  </data>
+  <data name="textEditorControl_CopyrightMessage.ToolTip" xml:space="preserve">
+    <value>   The 'Copyright message' frame, which must begin with a year and a
+   space character (making five characters), is intended for the
+   copyright holder of the original sound, not the audio file itself. The
+   absence of this frame means only that the copyright information is
+   unavailable or has been removed, and must not be interpreted to mean
+   that the sound is public domain. Every time this field is displayed
+   the field must be preceded with "Copyright " (C) " ", where (C) is one
+   character showing a C in a circle.</value>
+  </data>
+  <data name="textEditorControl_AlbumSortOrder.ToolTip" xml:space="preserve">
+    <value>   The 'Album sort order' frame defines a string which should be used
+   instead of the album name (TALB) for sorting purposes. E.g. an album
+   named "A Soundtrack" might preferably be sorted as "Soundtrack".</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
+  <data name="dateControl_OriginalYear.ToolTip" xml:space="preserve">
+    <value>   The 'Original release year' frame is intended for the year when the
+   original recording, if for example the music in the file should be a
+   cover of a previously released song, was released. The field is
+   formatted as in the "TDY" frame.</value>
+  </data>
+  <data name="textEditorControl_OriginalFilename.ToolTip" xml:space="preserve">
+    <value>   The 'Original filename' frame contains the preferred filename for the
+   file, since some media doesn't allow the desired length of the
+   filename. The filename is case sensitive and includes its suffix.</value>
+  </data>
+  <data name="textEditorControl_PlaylistDelay.ToolTip" xml:space="preserve">
+    <value>   The 'Playlist delay' defines the numbers of milliseconds of silence
+   between every song in a playlist. The player should use the "ETC"
+   frame, if present, to skip initial silence and silence at the end of
+   the audio to match the 'Playlist delay' time. The time is represented
+   as a numeric string.</value>
+  </data>
+  <data name="textEditorControl_Software.ToolTip" xml:space="preserve">
+    <value>   The 'Software/hardware and settings used for encoding' frame
+   includes the used audio encoder and its settings when the file was
+   encoded. Hardware refers to hardware encoders, not the computer on
+   which a program was run.</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+</root>

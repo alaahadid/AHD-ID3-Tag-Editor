@@ -1,0 +1,9 @@
+﻿
+
+Commandlines:
+=============
+
+* /rst: reset settings to defaults
+* /list <ListFilePath>: load list at <ListFilePath> file path 
+* /edit1: full edit id3v1 for all files in the list. This must be called after adding files.
+* /edit2: full edit id3v2 for all files in the list. This must be called after adding files.

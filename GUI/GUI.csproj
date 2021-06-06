@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCA6064D-67BE-41CD-8ADC-D3CD1666C5B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AHD.ID3.Editor.GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|AnyCPU'">
+    <OutputPath>bin\x86\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\Release\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\x86\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Browsers\C_FilesBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Browsers\C_FilesBrowser.Designer.cs">
+      <DependentUpon>C_FilesBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browsers\C_FoldersBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Browsers\C_FoldersBrowser.Designer.cs">
+      <DependentUpon>C_FoldersBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browsers\C_ListsBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Browsers\C_ListsBrowser.Designer.cs">
+      <DependentUpon>C_ListsBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browsers\C_TagExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Browsers\C_TagExplorer.Designer.cs">
+      <DependentUpon>C_TagExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_TermsOfUseFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_TermsOfUseFrame.Designer.cs">
+      <DependentUpon>C_TermsOfUseFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debug and log\LogPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Debug and log\LogPanel.Designer.cs" />
+    <Compile Include="Debug and log\LoggerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Debug and log\LoggerControl.Designer.cs">
+      <DependentUpon>LoggerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_MediaPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_MediaPreview.Designer.cs">
+      <DependentUpon>Frm_MediaPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Log.Designer.cs">
+      <DependentUpon>Frm_Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_FullEditV1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_FullEditV1.Designer.cs">
+      <DependentUpon>Frm_FullEditV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_TagExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_TagExplorer.Designer.cs">
+      <DependentUpon>Frm_TagExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_RenameUsingTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_RenameUsingTag.Designer.cs">
+      <DependentUpon>Frm_RenameUsingTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_ExtractTagContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_ExtractTagContent.Designer.cs">
+      <DependentUpon>Frm_ExtractTagContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\PlayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Players\PlayerControl.Designer.cs">
+      <DependentUpon>PlayerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\C_MediaPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Players\C_MediaPlayer.Designer.cs">
+      <DependentUpon>C_MediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_SynchronisedLyrics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_SynchronisedLyrics.Designer.cs">
+      <DependentUpon>C_SynchronisedLyrics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_EventTimingCodes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_EventTimingCodes.Designer.cs">
+      <DependentUpon>C_EventTimingCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_PlayCounter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_PlayCounter.Designer.cs">
+      <DependentUpon>C_PlayCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_Commercial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_Commercial.Designer.cs">
+      <DependentUpon>C_Commercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_GeneralEncapsulatedObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_GeneralEncapsulatedObject.Designer.cs">
+      <DependentUpon>C_GeneralEncapsulatedObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_MusicCDIdentifier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_MusicCDIdentifier.Designer.cs">
+      <DependentUpon>C_MusicCDIdentifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_UniqueFileIdentifier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_UniqueFileIdentifier.Designer.cs">
+      <DependentUpon>C_UniqueFileIdentifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_UnsychronisedLyrics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_UnsychronisedLyrics.Designer.cs">
+      <DependentUpon>C_UnsychronisedLyrics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_InvolvedPeopleList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_InvolvedPeopleList.Designer.cs">
+      <DependentUpon>C_InvolvedPeopleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_Popularimeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_Popularimeter.Designer.cs">
+      <DependentUpon>C_Popularimeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_CommentsEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_CommentsEditor.Designer.cs">
+      <DependentUpon>C_CommentsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_UrlLinkEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_UrlLinkEditor.Designer.cs">
+      <DependentUpon>C_UrlLinkEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_ImportSubtitlesFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_ImportSubtitlesFormat.Designer.cs">
+      <DependentUpon>Frm_ImportSubtitlesFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\MediaSeeker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Players\MediaSeeker.designer.cs">
+      <DependentUpon>MediaSeeker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\TimeChangeArgs.cs" />
+    <Compile Include="Types\EnterNameFormOkPressedArgs.cs" />
+    <Compile Include="Forms\Frm_EnterName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_EnterName.Designer.cs">
+      <DependentUpon>Frm_EnterName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_ExportSubtitlesFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_ExportSubtitlesFormat.Designer.cs">
+      <DependentUpon>Frm_ExportSubtitlesFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimelineControls\SynchronisedLyricsCodesPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimelineControls\SynchronisedLyricsCodesPanel.Designer.cs">
+      <DependentUpon>SynchronisedLyricsCodesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimelineControls\TimeChangedArg.cs" />
+    <Compile Include="TimelineControls\EventTimingCodesPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimelineControls\EventTimingCodesPanel.Designer.cs">
+      <DependentUpon>EventTimingCodesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_SavePending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_SavePending.Designer.cs">
+      <DependentUpon>Frm_SavePending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Types\EditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\DateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\DateControl.Designer.cs">
+      <DependentUpon>DateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_FullTextFramesEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_FullTextFramesEditor.Designer.cs">
+      <DependentUpon>C_FullTextFramesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_QuickTagEditorV1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_QuickTagEditorV1.Designer.cs">
+      <DependentUpon>C_QuickTagEditorV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\ComboBoxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\ComboBoxControl.Designer.cs">
+      <DependentUpon>ComboBoxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_ImagesManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_ImagesManager.Designer.cs">
+      <DependentUpon>C_ImagesManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\C_QuickTagEditorV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\C_QuickTagEditorV2.Designer.cs">
+      <DependentUpon>C_QuickTagEditorV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_EnterNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_EnterNumber.Designer.cs">
+      <DependentUpon>Frm_EnterNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_ImagesManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_ImagesManager.Designer.cs">
+      <DependentUpon>Frm_ImagesManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_SelectFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_SelectFile.Designer.cs">
+      <DependentUpon>Frm_SelectFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_FullID3V2Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_FullID3V2Edit.Designer.cs">
+      <DependentUpon>Frm_FullID3V2Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePanel\ImagePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImagePanel\ImagePanel.Designer.cs">
+      <DependentUpon>ImagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePanel\ImagePanelEnums.cs" />
+    <Compile Include="Editors\RatingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\RatingControl.Designer.cs">
+      <DependentUpon>RatingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\TextEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\TextEditorControl.Designer.cs">
+      <DependentUpon>TextEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\NumberControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\NumberControl.Designer.cs">
+      <DependentUpon>NumberControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\RichTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\RichTextControl.Designer.cs">
+      <DependentUpon>RichTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Types\ItemsComparer.cs" />
+    <Compile Include="Types\ListSelectArgs.cs" />
+    <Compile Include="Types\ManagedListViewItem_MP3File.cs" />
+    <Compile Include="Types\FolderSelectArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Browsers\C_FoldersBrowser.resx">
+      <DependentUpon>C_FoldersBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browsers\C_FilesBrowser.resx">
+      <DependentUpon>C_FilesBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browsers\C_ListsBrowser.resx">
+      <DependentUpon>C_ListsBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browsers\C_TagExplorer.resx">
+      <DependentUpon>C_TagExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_TermsOfUseFrame.resx">
+      <DependentUpon>C_TermsOfUseFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debug and log\LoggerControl.resx">
+      <DependentUpon>LoggerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Log.resx">
+      <DependentUpon>Frm_Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_MediaPreview.resx">
+      <DependentUpon>Frm_MediaPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_FullEditV1.resx">
+      <DependentUpon>Frm_FullEditV1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_TagExplorer.resx">
+      <DependentUpon>Frm_TagExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_RenameUsingTag.resx">
+      <DependentUpon>Frm_RenameUsingTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_ExtractTagContent.resx">
+      <DependentUpon>Frm_ExtractTagContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Players\PlayerControl.resx">
+      <DependentUpon>PlayerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Players\C_MediaPlayer.resx">
+      <DependentUpon>C_MediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_EventTimingCodes.resx">
+      <DependentUpon>C_EventTimingCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_Commercial.resx">
+      <DependentUpon>C_Commercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_GeneralEncapsulatedObject.resx">
+      <DependentUpon>C_GeneralEncapsulatedObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_MusicCDIdentifier.resx">
+      <DependentUpon>C_MusicCDIdentifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_PlayCounter.resx">
+      <DependentUpon>C_PlayCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_SynchronisedLyrics.resx">
+      <DependentUpon>C_SynchronisedLyrics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_UniqueFileIdentifier.resx">
+      <DependentUpon>C_UniqueFileIdentifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_UnsychronisedLyrics.resx">
+      <DependentUpon>C_UnsychronisedLyrics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_InvolvedPeopleList.resx">
+      <DependentUpon>C_InvolvedPeopleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_Popularimeter.resx">
+      <DependentUpon>C_Popularimeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_CommentsEditor.resx">
+      <DependentUpon>C_CommentsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_UrlLinkEditor.resx">
+      <DependentUpon>C_UrlLinkEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\DateControl.resx">
+      <DependentUpon>DateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\ComboBoxControl.resx">
+      <DependentUpon>ComboBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_FullTextFramesEditor.resx">
+      <DependentUpon>C_FullTextFramesEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_ImagesManager.resx">
+      <DependentUpon>C_ImagesManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_QuickTagEditorV1.resx">
+      <DependentUpon>C_QuickTagEditorV1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\C_QuickTagEditorV2.resx">
+      <DependentUpon>C_QuickTagEditorV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\NumberControl.resx">
+      <DependentUpon>NumberControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_EnterName.resx">
+      <DependentUpon>Frm_EnterName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_EnterNumber.resx">
+      <DependentUpon>Frm_EnterNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_ImagesManager.resx">
+      <DependentUpon>Frm_ImagesManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_SelectFile.resx">
+      <DependentUpon>Frm_SelectFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_FullID3V2Edit.resx">
+      <DependentUpon>Frm_FullID3V2Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_SavePending.resx">
+      <DependentUpon>Frm_SavePending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_ExportSubtitlesFormat.resx">
+      <DependentUpon>Frm_ExportSubtitlesFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_ImportSubtitlesFormat.resx">
+      <DependentUpon>Frm_ImportSubtitlesFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\RatingControl.resx">
+      <DependentUpon>RatingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\TextEditorControl.resx">
+      <DependentUpon>TextEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\RichTextControl.resx">
+      <DependentUpon>RichTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASMP\ASMP.csproj">
+      <Project>{26170bc5-b2c0-4b36-acd5-cba634b52174}</Project>
+      <Name>ASMP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Base\Base.csproj">
+      <Project>{1827041e-f551-42c3-b9a1-5e3241fa759a}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Formats\Formats.csproj">
+      <Project>{980c8603-f470-4856-8284-be449eb2f9c4}</Project>
+      <Name>Formats</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ID3Tag\ID3Tag.csproj">
+      <Project>{cf94e1ec-89cf-4363-a4ad-370b71a1058e}</Project>
+      <Name>ID3Tag</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLV\MLV.csproj">
+      <Project>{cb876583-d5f9-4398-b399-fbe6d4aa8a51}</Project>
+      <Name>MLV</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noneRating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unrateactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Edit codes.txt" />
+    <None Include="Resources\sound.png" />
+    <None Include="Resources\sound_mute.png" />
+    <None Include="Resources\control_fastforward.png" />
+    <None Include="Resources\control_rewind.png" />
+    <None Include="Resources\control_pause.png" />
+    <None Include="Resources\control_play.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\silence.wav" />
+    <None Include="Resources\File_unkown.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
